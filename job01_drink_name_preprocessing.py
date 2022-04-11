@@ -4,7 +4,7 @@ import re
 import pandas as pd
 
 
-df = pd.read_csv('./reviews_1020.csv')
+df = pd.read_csv('./crawling_data/reviews_1020.csv')
 stopwords = pd.read_csv('./crawling_data/stopwords.csv')
 stopwords_list = list(stopwords['stopword'])
 cleaned_names = []
@@ -22,5 +22,5 @@ for name in df.drink_name:
 df['cleaned_names'] = cleaned_names
 df = df[['cleaned_names']]
 df.drop_duplicates(inplace=True)
-df.to_csv('./cleaned_names.csv', index=False)
+df.to_csv('./crawling_data/cleaned_names.csv', index=False)
 df.info()
