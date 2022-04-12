@@ -19,8 +19,8 @@ for name in df.drink_name:
                 new_names.append(name)
     cleaned_name = ' '.join(new_names)
     cleaned_names.append(cleaned_name)
-df['cleaned_names'] = cleaned_names
-df = df[['cleaned_names']]
+df['drink_name'] = cleaned_names
+df = df[['drink_name']]
 df.drop_duplicates(inplace=True)
 df.to_csv('./crawling_data/cleaned_names.csv', index=False)
 df.info()
