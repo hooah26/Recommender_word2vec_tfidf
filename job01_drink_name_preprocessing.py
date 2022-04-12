@@ -4,7 +4,7 @@ import re
 import pandas as pd
 
 
-df = pd.read_csv('./crawling_data/reviews_1020.csv')
+df = pd.read_csv('./crawling_data/reviews.csv')
 stopwords = pd.read_csv('./crawling_data/stopwords.csv')
 stopwords_list = list(stopwords['stopword'])
 cleaned_names = []

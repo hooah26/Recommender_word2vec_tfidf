@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 import pandas as pd
+import time
 
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"}
@@ -17,7 +18,8 @@ for i in range(1, 18):
     contents = soup.find("ul",{"id":"productList"})
     raw_productLists += ([p.text for p in contents.find_all("div",{"class":"name"})])
     print(raw_productLists)
+    time.sleep(1)
 
 df = pd.DataFrame({'drink_name':raw_productLists})
-df.to_csv('./crawling_data/reviews_{}.csv'.format(len(df)), encoding='utf-8-sig', index=False)
+df.to_csv('./crawling_data/reviews.csv', encoding='utf-8-sig', index=False)
 print(len(raw_productLists))
