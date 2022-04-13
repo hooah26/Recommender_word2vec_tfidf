@@ -39,6 +39,7 @@ for i in range(1, 18):
         #     continue
 
 df = pd.DataFrame({'drink_name':product_list})
+# df['drink_name'].sort_values()
 df.to_csv('./crawling_data/reviews.csv', encoding='utf-8-sig', index=False)
 print(product_list)
 

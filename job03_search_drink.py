@@ -18,7 +18,7 @@ df = pd.read_csv('./crawling_data/cleaned_names.csv')
 drink_names = list(df.drink_name)
 
 
-for drink_name in drink_names:
+for drink_name in drink_names[122:]:
 
     driver = webdriver.Chrome('./chromedriver', options=option)
     driver.implicitly_wait(10)
@@ -33,19 +33,19 @@ for drink_name in drink_names:
     element = driver.find_element_by_name('q')
     element.send_keys(drink_name)
     element.submit()
-    time.sleep(1)
+    time.sleep(1.5)
 
 
     ele = driver.find_elements_by_class_name('no-1')
     ele[0].click()
 
-    time.sleep(1)
+    time.sleep(2)
 
     window_after = driver.window_handles[1]
     driver.switch_to.window(window_after) # 새로운 창 hand하기
 
     driver.execute_script("window.scrollTo(0, 700)")
-    time.sleep(1)
+    time.sleep(2)
     driver.find_element_by_xpath('//*[@id="btfTab"]/ul[1]/li[2]').click()
     time.sleep(1.5)
 
@@ -79,9 +79,12 @@ for drink_name in drink_names:
                     break
             else:
                 break
-
-        driver.find_element_by_xpath('//*[@id="btfTab"]/ul[2]/li[2]/div/div[6]/section[4]/div[3]/button[12]').click()
-
+        try:
+            driver.find_element_by_xpath('//*[@id="btfTab"]/ul[2]/li[2]/div/div[6]/section[4]/div[3]/button[12]').click()
+            time.sleep(1)
+        except:
+             print('페이지없음')
+             break
     print(len(reviews))
 
     df = pd.DataFrame({'reviews': reviews})
