@@ -18,10 +18,10 @@ rc('font', family=font_name)
 # plt.rc('font', family='NanumBarunGothic')
 # mpl.font_manager._rebuild()
 
-embedding_model = Word2Vec.load('./models/word2vecModel.model')
+embedding_model = Word2Vec.load('./models/drink_word2vecModel.model')
 # print(list(embedding_model.wv.index_to_key))
 # print(len(list(embedding_model.wv.index_to_key)))
-key_word = '술'
+key_word = '운동'
 sim_word = embedding_model.wv.most_similar(key_word, topn=20)
 print(sim_word)
 print(len(sim_word))

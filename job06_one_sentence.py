@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('./crawling_data/cleaned_review_data2.csv')
+df = pd.read_csv('./crawling_data/cleaned_data_02.csv')
 print(df.head())
 print(df.duplicated().sum())
 
@@ -17,7 +17,8 @@ for product in df['product'].unique():
 df_one_sentences = pd.DataFrame(
     {'product':df['product'].unique(), 'cleaned_sentences':one_sentences})
 print(df_one_sentences.head())
-df_one_sentences.to_csv('./crawling_data/onesentence.csv', index=False)
+df_one_sentences.dropna(inplace=True)
+df_one_sentences.to_csv('./crawling_data/_onesentence.csv', index=False)
 
 
 

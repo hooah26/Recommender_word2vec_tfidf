@@ -2,7 +2,7 @@ import pandas as pd
 from konlpy.tag import Okt
 import re
 
-df = pd.read_csv('./crawling_data/cleaned_review_data.csv')
+df = pd.read_csv('./crawling_data/cleaned_data.csv')
 df.dropna(inplace=True)
 print(df.head())
 df.info()
@@ -21,15 +21,14 @@ for sentence in df.cleaned_sentences:
     df_token = pd.DataFrame(token,  columns=['word', 'class'])
     df_token = df_token[(df_token['class']=='Noun') |
                                 (df_token['class']=='Verb') |
-                                (df_token['class']=='Adjective')|
-                        (df_token['class']=='Adverb')]
+                                (df_token['class']=='Adjective')]
     cleaned_sentence = ' '.join(df_token.word)
     # print(cleaned_sentence)
     cleaned_sentences.append(cleaned_sentence)
 df['cleaned_sentences'] = cleaned_sentences
 print(df.head())
 df.info()
-df.to_csv('./crawling_data/cleaned_review_data2.csv',
+df.to_csv('./crawling_data/cleaned_data_02.csv',
           index=False)
 
 

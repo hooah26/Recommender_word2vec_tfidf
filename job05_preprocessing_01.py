@@ -13,7 +13,7 @@ df.info()
 stopwords = pd.read_csv('./crawling_data/stopwords.csv')
 stopwords_list = list(stopwords['stopword'])
 cleaned_sentences = []
-for review in df.review_list:
+for review in df.reviews:
     review = re.sub('[^가-힣 ]', '', review)
     review_word = review.split(' ')
 
@@ -26,6 +26,7 @@ for review in df.review_list:
     cleaned_sentences.append(cleaned_sentence)
 df['cleaned_sentences'] = cleaned_sentences
 df = df[['product', 'cleaned_sentences']]
-df.to_csv('./crawling_data/cleaned_review_data.csv',
+df=df.drop_duplicates(['cleaned_sentences'], keep='first')
+df.to_csv('./crawling_data/cleaned_data.csv',
           index=False)
 df.info()
