@@ -6,25 +6,24 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 import time
 
-
-
 option = webdriver.ChromeOptions()
-#options.add_argument('headless')
 option.add_argument('lang=ko_KR')
 option.add_argument('--no-sandbox')
 option.add_argument('--disable-dev-shm-usage')
 option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36")
-headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36'}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36'}
 option.add_argument('disable-gpu')
-driver = webdriver.Chrome('./chromedriver', options=option)
-driver.implicitly_wait(10)
 
 df = pd.read_csv('./crawling_data/cleaned_names.csv')
-# print(df.head())
 drink_names = list(df.drink_name)
 
 
 for drink_name in drink_names:
+
+    driver = webdriver.Chrome('./chromedriver', options=option)
+    driver.implicitly_wait(10)
+
+
     coupang_url = 'https://www.coupang.com/np/categories/194276'
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", { "source": """ Object.defineProperty(navigator, 'webdriver', { get: () => undefined }) """ })
 
@@ -48,7 +47,7 @@ for drink_name in drink_names:
     driver.execute_script("window.scrollTo(0, 700)")
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="btfTab"]/ul[1]/li[2]').click()
-    time.sleep(1)
+    time.sleep(1.5)
 
     reviews = []
     for h in range(1, 3):
@@ -71,7 +70,7 @@ for drink_name in drink_names:
                             reviews.append(review)
                             print(h, '쪽', j, '페이지', i, '번째')
                         except:
-                            print('review_error', i)
+                            print('review_error')
                             f = True
                             break
 
@@ -83,13 +82,10 @@ for drink_name in drink_names:
 
         driver.find_element_by_xpath('//*[@id="btfTab"]/ul[2]/li[2]/div/div[6]/section[4]/div[3]/button[12]').click()
 
-
-
-
     print(len(reviews))
 
     df = pd.DataFrame({'reviews': reviews})
-    print(df.tail())
+    # print(df.tail())
     df.to_csv('./review_datas/review_{}.csv'.format(drink_name), index=False)
-
+    driver.quit()
 
