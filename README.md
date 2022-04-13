@@ -1,2 +1,2 @@
 # drink_recommendations
-음료 추천 모델
+각종 상품 추천 모델링
