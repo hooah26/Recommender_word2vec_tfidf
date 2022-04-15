@@ -23,12 +23,12 @@ class Exam(QMainWindow, form_window):
         super().__init__()
         self.setupUi(self)
         self.show()
+        self.lbl_coupang.setPixmap(QPixmap('C:\work\python\drink_recommendations_t\couang.png').scaledToWidth(500))
         self.category = ['음료', '가공식품', '과자', '커피,원두,차', '냉장,냉동,간편요리', '건강 식품']
         self.df_reviews = pd.read_csv('models/drink_onesentence.csv')
         self.Tfidf_matrix = mmread('./models/drink.mtx').tocsr()
         with open('./models/drink.pickle', 'rb') as f:
             self.Tfidf = pickle.load(f)
-
         for i in self.category :
             self.cmb_category.addItem(i)
         self.cmb_category.currentIndexChanged.connect(self.cmb_category_slot)

@@ -31,7 +31,16 @@ class buywindow(QDialog,QWidget,form_buywindow):
         self.initUI()
         self.show()
         self.btn_back.clicked.connect(self.Close)
-        self.btn_more.clicked.connect(self.More)
+        # self.btn_more.clicked.connect(self.More)
+        self.lbl_pn1.setText('비타500')
+        self.lbl_pn2.setText('오로나민씨')
+        self.lbl_pn3.setText('광동 구론산')
+        self.btn_buy1.clicked.connect(lambda: webbrowser.open('https://www.coupang.com/vp/products/1319536742?itemId=2339693801&vendorItemId=70336288654&sourceType=srp_product_ads&clickEventId=c0e4250b-b2cc-44b1-934f-baadf35cd121&korePlacement=15&koreSubPlacement=3&q=%EB%B0%95%EC%B9%B4%EC%8A%A4&itemsCount=36&searchId=ed56d2878a674fc68e736032ae3a78df&rank=2&isAddedCart='))
+        self.btn_buy2.clicked.connect(lambda: webbrowser.open('https://www.coupang.com/vp/products/4832648183?itemId=6237805963&vendorItemId=3251102051&pickType=COU_PICK&q=%EC%98%A4%EB%A1%9C%EB%82%98%EB%AF%BC%EC%94%A8&itemsCount=36&searchId=1d8ab29c1e6b4fc59eb9b35dd6a60c20&rank=0&isAddedCart='))
+        self.btn_buy3.clicked.connect(lambda: webbrowser.open('https://www.coupang.com/vp/products/1329395613?itemId=2353171100&vendorItemId=70349657093&q=%ED%83%80%EC%9A%B0%EB%A6%B0&itemsCount=36&searchId=6a30a4a8fe6e462b8739cc49faa71bd5&rank=2&isAddedCart='))
+        self.lbl_pd1.setPixmap(QPixmap('vita500.jpg').scaledToWidth(200))
+        self.lbl_pd2.setPixmap(QPixmap('oro.jpg').scaledToWidth(200))
+        self.lbl_pd3.setPixmap(QPixmap('tau.jpg').scaledToWidth(200))
 
     def initUI(self):
         self.setupUi(self)
@@ -41,40 +50,43 @@ class buywindow(QDialog,QWidget,form_buywindow):
         self.title = self.mainwindow.recommendation_titles.split('\n')
 
 
-    def More(self):
-        self.names = []
-        for i in range(3):
-            self.names.append(self.title[i])
-        print(self.names)
-        self.lbl_pn1.setText(self.title[0])
-        self.lbl_pn2.setText(self.title[1])
-        self.lbl_pn3.setText(self.title[2])
-        imgs = []
-        hrefs = []
+    #
+    # def More(self):
 
-        for name in self.names :
-            url = 'https://www.coupang.com/np/search?component=&q={}&channel=user'.format(name)
-            try:
-                res = requests.get(url, headers=headers, timeout=10)
-                print('서버확인')
-                soup = BeautifulSoup(res.text, 'html.parser')
-                img = soup.find("img", {"class": "search-product-wrap-img"})['src']
-                href = soup.find('a', {'class': 'search-product-link'})['href']
-                product_name = soup.find('div', {'class': 'name'}).get_text()
-                URL = 'https:' + img
-                href_URL = 'https://www.coupang.com/' + href
-                imgs.append(URL)
-                hrefs.append(href_URL)
-            except:
-                print('쿠팡서버 거절')
-                continue
-        print('포문끝')
-        print(imgs)
-        print(hrefs)
+        # self.names = []
+        # for i in range(3):
+        #     self.names.append(self.title[i])
+        # print(self.names)
+        # self.lbl_pn1.setText(self.title[0])
+        # self.lbl_pn2.setText(self.title[1])
+        # self.lbl_pn3.setText(self.title[2])
+        # imgs = []
+        # hrefs = []
+        # print('for문 전 시작')
+        # for name in self.names :
+        #     url = 'https://www.coupang.com/np/search?component=&q={}&channel=user'.format(name)
+        #     try:
+        #         res = requests.get(url, headers=headers, timeout=5)
+        #         print('서버확인')
+        #         soup = BeautifulSoup(res.text, 'html.parser')
+        #         img = soup.find("img", {"class": "search-product-wrap-img"})['src']
+        #         href = soup.find('a', {'class': 'search-product-link'})['href']
+        #         product_name = soup.find('div', {'class': 'name'}).get_text()
+        #         URL = 'https:' + img
+        #         href_URL = 'https://www.coupang.com/' + href
+        #         imgs.append(URL)
+        #         hrefs.append(href_URL)
+        #     except:
+        #         print('쿠팡서버 거절')
+        #         continue
+        # print('포문끝')
+        # print(imgs)
+        # print(hrefs[1])
+        # self.btn_buy1.clicked.connect(lambda: webbrowser.open(hrefs[1]))
         # try:
         #     for i in range(1,4):
-        #         self.btn_buy[i].setText('당장구매하기',i)
-        #         self.btn_buy[i].clicked.connect(lambda: webbrowser.open(hrefs[i]))
+        #         self.btn_buyi.setText('당장구매하기',i)
+        #         self.btn_buyi.clicked.connect(lambda: webbrowser.open(hrefs[i]))
         # except:
         #     print('값이 없음')
         # print('링크끝')
@@ -92,7 +104,7 @@ class buywindow(QDialog,QWidget,form_buywindow):
         # self.lbl_pd2.setPixmap(self.pixmap2)
         # self.lbl_pd3.setPixmap(self.pixmap3)
         #
-        print('이미지끝')
+        # print('이미지끝')
 
 
     def Close(self):
