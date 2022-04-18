@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1387</width>
+    <height>908</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QPushButton" name="btn_close">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>770</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>취소하기</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>860</y>
+     <width>1291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>610</y>
+     <width>20</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QWebEngineView" name="web_view">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>20</y>
+     <width>1281</width>
+     <height>841</height>
+    </rect>
+   </property>
+   <property name="url">
+    <url>
+     <string>https://www.coupang.com/vp/products/4757199971?itemId=3553382132&amp;vendorItemId=70558862604&amp;pickType=COU_PICK&amp;q=박카스&amp;itemsCount=36&amp;searchId=a2f80cf9115b4eb9ac4bb3d7120f66ae&amp;rank=0&amp;isAddedCart=</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_buy">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>690</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>구매하기</string>
+   </property>
+  </widget>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>web_view</zorder>
+  <zorder>btn_close</zorder>
+  <zorder>btn_buy</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
