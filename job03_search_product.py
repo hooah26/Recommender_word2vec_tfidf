@@ -16,13 +16,14 @@ option.add_argument('disable-gpu')
 
 df = pd.read_csv('./crawling_data/cleaned_product_name.csv')
 product_names = list(df.product_name)
+print(product_names)
 
 
 for product_name in product_names:
 
     driver = webdriver.Chrome('./chromedriver', options=option)
     driver.implicitly_wait(10)
-
+    print(product_name)
 
     coupang_url = 'https://www.coupang.com/np/categories/194276'
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", { "source": """ Object.defineProperty(navigator, 'webdriver', { get: () => undefined }) """ })
@@ -31,7 +32,7 @@ for product_name in product_names:
     time.sleep(1)
 
     element = driver.find_element_by_name('q')
-    element.send_keys(drink_name)
+    element.send_keys(product_name)
     element.submit()
     time.sleep(1.5)
 
@@ -89,6 +90,6 @@ for product_name in product_names:
 
     df = pd.DataFrame({'reviews': reviews})
     # print(df.tail())
-    df.to_csv('./review_data/reviews_{}.csv'.format(product_name), index=False)
+    df.to_csv('./review_datas/reviews_{}.csv'.format(product_name), index=False)
     driver.quit()
 

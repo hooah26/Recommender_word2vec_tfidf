@@ -13,11 +13,11 @@ font_name = font_manager.FontProperties(
 mpl.rcParams['axes.unicode_minus']=False
 rc('font', family=font_name)
 
-df = pd.read_csv('./crawling_data/_onesentence.csv')
-print(df.head())
+df = pd.read_csv('crawling_data/onesentence.csv')
+# print(df.head())
 df.info()
+print(df)
 words = df.iloc[200, 1]
-print(words)
 
 words = words.split()
 print(words)
@@ -27,20 +27,20 @@ worddict_1 = dict(worddict_1)
 worddict_1 = dict(sorted(worddict_1.items(),
                     key=lambda item:item[1],
                       reverse=True))
-print(worddict_1)
-
-words = df.iloc[100, 1]
+print('w1',worddict_1)
+#
 # print(words)
 
-words = words.split()
-# print(words)
 
 worddict_2 = collections.Counter(words)
 worddict_2 = dict(worddict_2)
 worddict_2 = dict(sorted(worddict_2.items(),
                     key=lambda item:item[1],
                       reverse=True))
-print(worddict_2)
+print('w2',worddict_2)
+
+
+
 wordcloud_img_1 = WordCloud(
     background_color='white', max_words=500,
     font_path=fontpath).generate_from_frequencies(worddict_1)
@@ -59,7 +59,6 @@ plt.figure(figsize=(12, 4))
 plt.imshow(wordcloud_img_2, interpolation='bilinear')
 plt.axis('off')
 plt.show()
-#
 
 
 

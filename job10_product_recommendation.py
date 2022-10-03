@@ -4,7 +4,7 @@ from scipy.io import mmread, mmwrite
 import pickle
 from gensim.models import Word2Vec
 
-df_reviews = pd.read_csv('./crawling_data/_onesentence.csv')
+df_reviews = pd.read_csv('./crawling_data/onesentence.csv')
 df_reviews.info()
 def getRecommendation(cosine_sim):
     simScore = list(enumerate(cosine_sim[-1]))
@@ -21,16 +21,9 @@ Tfidf_matrix = mmread('./models/drink.mtx').tocsr()
 with open('./models/drink.pickle', 'rb') as f:
     Tfidf = pickle.load(f)
 
-# # 영화 제목을 이용
-# movie_idx = df_reviews[df_reviews['title']=='해피 데스데이 2 유'].index[0]
-# print(movie_idx)
-# 영화 index를 이용
-# movie_idx = 566
-# print(df_reviews.iloc[movie_idx, 0])
 
-#key_word 이용
 embedding_model = Word2Vec.load('./models/drink_word2vecModel.model')
-key_word = '운동'
+key_word = '게토레이'
 sim_word = embedding_model.wv.most_similar(key_word, topn=10)
 sentence = [key_word] * 11
 words = []
@@ -42,7 +35,7 @@ for i, word in enumerate(words):
 sentence = ' '.join(sentence)
 
 # 문장을 이용
-# sentence = '아기들 마실 수 있는 음료'
+sentence = '게토레이 레몬'
 
 sentence_vec = Tfidf.transform([sentence])
 cosine_sim = linear_kernel(sentence_vec, Tfidf_matrix)
@@ -51,6 +44,9 @@ cosine_sim = linear_kernel(sentence_vec, Tfidf_matrix)
 recommendation = getRecommendation(cosine_sim)
 
 print(recommendation)
+
+
+
 
 
 

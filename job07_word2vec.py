@@ -1,7 +1,7 @@
 from gensim.models import Word2Vec
 import pandas as pd
 
-review_word = pd.read_csv('./crawling_data/_onesentence.csv')
+review_word = pd.read_csv('./crawling_data/onesentence.csv')
 review_word.info()
 
 cleaned_token_review = list(review_word['cleaned_sentences'])

@@ -18,7 +18,7 @@ df_one_sentences = pd.DataFrame(
     {'product':df['product'].unique(), 'cleaned_sentences':one_sentences})
 print(df_one_sentences.head())
 df_one_sentences.dropna(inplace=True)
-df_one_sentences.to_csv('./crawling_data/_onesentence.csv', index=False)
+df_one_sentences.to_csv('./crawling_data/onesentence.csv', index=False)
 
 
 

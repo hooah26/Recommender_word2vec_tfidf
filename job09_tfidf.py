@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.io import mmwrite, mmread
 import pickle
 
-df_reviews = pd.read_csv('./crawling_data/drink_onesentence.csv')
+df_reviews = pd.read_csv('./crawling_data/onesentence.csv')
 df_reviews.dropna(inplace=True)
 df_reviews.info()
 
