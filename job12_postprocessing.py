@@ -1,9 +1,11 @@
 import pandas as pd
 
+
+
 df = pd.read_csv('./crawling_data/cleaned_data_02.csv')
 df.dropna(inplace=True)
-print(df.head())
-df.info()
+
+
 
 stopwords = pd.read_csv('./crawling_data/stopwords.csv')
 stopwords_list = list(stopwords['stopword'])

@@ -90,6 +90,6 @@ for product_name in product_names:
 
     df = pd.DataFrame({'reviews': reviews})
     # print(df.tail())
-    df.to_csv('./review_datas/reviews_{}.csv'.format(product_name), index=False)
+    df.to_csv('./review_data/reviews_{}.csv'.format(product_name), index=False)
     driver.quit()
 

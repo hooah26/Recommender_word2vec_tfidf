@@ -1,6 +1,6 @@
 import pandas as pd
 import glob
-data_paths = glob.glob('./review_datas/*')
+data_paths = glob.glob('review_data/*')
 df = pd.DataFrame()
 
 # for path in data_paths:

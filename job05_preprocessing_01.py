@@ -17,6 +17,8 @@ for review in df.reviews:
     review = re.sub('[^가-힣 ]', '', review)
     review_word = review.split(' ')
 
+
+
     words = []
     for word in review_word:
         if len(word) > 1:
@@ -24,6 +26,7 @@ for review in df.reviews:
                 words.append(word)
     cleaned_sentence = ' '.join(words)
     cleaned_sentences.append(cleaned_sentence)
+
 df['cleaned_sentences'] = cleaned_sentences
 df = df[['product', 'cleaned_sentences']]
 df=df.drop_duplicates(['cleaned_sentences'], keep='first')

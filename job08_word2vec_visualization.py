@@ -5,7 +5,7 @@ from sklearn.manifold import TSNE # 차원 축소
 from matplotlib import font_manager, rc
 import matplotlib as mpl
 
-font_path = './malgun.ttf'
+font_path = './malgun_.ttf'
 font_name = font_manager.FontProperties(
     fname = font_path).get_name() # 파일 이름은 이렇게 생겼는데 안에 폰트 이름이 있다.
 

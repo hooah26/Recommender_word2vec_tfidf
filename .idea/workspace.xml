@@ -1,7 +1,497 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d5ccff3-d519-4b9a-934f-7e358f33d175" name="Changes" comment="submit" />
+    <list default="true" id="9d5ccff3-d519-4b9a-934f-7e358f33d175" name="Changes" comment="submit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job02_product_name_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/job02_product_name_preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job03_search_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/job03_search_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job04_concat.py" beforeDir="false" afterPath="$PROJECT_DIR$/job04_concat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job05_preprocessing_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/job05_preprocessing_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job05_preprocessing_02.py" beforeDir="false" afterPath="$PROJECT_DIR$/job05_preprocessing_02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job08_word2vec_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/job08_word2vec_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job12_postprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/job12_postprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_갈바니나 레몬 소다수.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_갈바니나 레몬 소다수.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_갈배 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_갈배 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_갈배사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_갈배사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_게토레이 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_게토레이 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_게토레이 블루볼트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_게토레이 블루볼트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_게토레이 파우더 레몬 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_게토레이 파우더 레몬 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_경남제약 레모나 드링크 병박스 비타민음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_경남제약 레모나 드링크 병박스 비타민음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_경남제약 비타민 레모나 드링크.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_경남제약 비타민 레모나 드링크.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_고려은단 마시는 비타민.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_고려은단 마시는 비타민.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_고려은단 스파클링 비타민.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_고려은단 스파클링 비타민.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_고려은단 허니유자 비타민 디즈니 곰돌이 에디션.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_고려은단 허니유자 비타민 디즈니 곰돌이 에디션.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_골드메달 마티넬리 탄산주.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_골드메달 마티넬리 탄산주.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_과라나 안타르치카.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_과라나 안타르치카.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 비타 광도르방.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 비타 광도르방.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 비타 로열폴리스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 비타 로열폴리스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 비타 마시는 비타민.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 비타 마시는 비타민.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 비타 비타민음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 비타 비타민음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 비타 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 비타 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 비타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 비타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동 아이스웨일 샤인머스캣.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동 아이스웨일 샤인머스캣.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_광동제약비타 동아제약 박카스 비타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_광동제약비타 동아제약 박카스 비타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_글라소 비타민워터 파워씨.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_글라소 비타민워터 파워씨.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_기분좋은 활력 비타민 유통기한까지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_기분좋은 활력 비타민 유통기한까지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_기타 빅토리아 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_기타 빅토리아 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_기획 환타 파인애플 코카콜라 각펫씩.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_기획 환타 파인애플 코카콜라 각펫씩.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_꼬마캔세트 꼬마캔 과일세트 소캔캔 럭키박스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_꼬마캔세트 꼬마캔 과일세트 소캔캔 럭키박스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_꼬마캔세트 꼬마캔 탄산세트 소캔캔 럭키박스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_꼬마캔세트 꼬마캔 탄산세트 소캔캔 럭키박스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_나랑드사이다 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_나랑드사이다 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_나랑드사이다 제로칼로리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_나랑드사이다 제로칼로리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_나랑드사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_나랑드사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_남양유업 프라우 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_남양유업 프라우 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_남양유업 프라우 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_남양유업 프라우 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_남양유업 프라우 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_남양유업 프라우 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_내몸에이온음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_내몸에이온음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_넥스바 무설탕 콤부차.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_넥스바 무설탕 콤부차.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_노브랜드 스파클링에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_노브랜드 스파클링에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_농심 웰치스 소다 포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_농심 웰치스 소다 포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_농심 웰치스소다 포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_농심 웰치스소다 포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_농심 파워오투 가지맛 혼합 개씩.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_농심 파워오투 가지맛 혼합 개씩.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_농심 파워오투 애플키위맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_농심 파워오투 애플키위맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_닥터페퍼.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_닥터페퍼.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데미소다 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데미소다 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데미소다 애플 레몬 오렌지 자몽 피치 청포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데미소다 애플 레몬 오렌지 자몽 피치 청포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데미소다 애플 자몽 오렌지 복숭아 청포도 소캔 혼합.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데미소다 애플 자몽 오렌지 복숭아 청포도 소캔 혼합.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데미소다 애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데미소다 애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데미소다 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데미소다 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데미소다 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데미소다 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_데일리 레몬워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_데일리 레몬워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_독일 쥬스 피트라인 리스토레이트 티백 미네랄비타민.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_독일 쥬스 피트라인 리스토레이트 티백 미네랄비타민.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_독일피엠쥬스 피트라인 뷰티 콜라겐 최신상품.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_독일피엠쥬스 피트라인 뷰티 콜라겐 최신상품.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_독점수입 짐버 오가닉 생강 에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_독점수입 짐버 오가닉 생강 에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동아 데미소다 내맘대로 골라담기.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동아 데미소다 내맘대로 골라담기.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동아 컨피던스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동아 컨피던스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동원 마시는 유산균 쿨피스톡 복숭아맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동원 마시는 유산균 쿨피스톡 복숭아맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동원 미네마인 스파클링 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동원 미네마인 스파클링 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동원 미네마인 스파클링워터 레몬맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동원 미네마인 스파클링워터 레몬맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동원에프앤비 미네마인 스파클링워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동원에프앤비 미네마인 스파클링워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_동원에프엔비 마시는 유산균 쿨피스톡 복숭아맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_동원에프엔비 마시는 유산균 쿨피스톡 복숭아맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸 입입.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸 입입.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸 자몽 레몬개.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸 자몽 레몬개.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸 플레인 레몬개.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸 플레인 레몬개.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_라인바싸.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_라인바싸.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_레몬에이드 탄산에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_레몬에이드 탄산에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_레쓰비 그란데라떼 헤이즐넛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_레쓰비 그란데라떼 헤이즐넛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_로리나 레몬에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_로리나 레몬에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_로리나 스파클링 레모네이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_로리나 스파클링 레모네이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_로리나 핑크 레모네이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_로리나 핑크 레모네이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_로엘 쿠아 수분충전 라임맛 에너지음료 분말 스틱.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_로엘 쿠아 수분충전 라임맛 에너지음료 분말 스틱.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_로엘 쿠아 수분충전 복숭아맛 에너지음료 분말 스틱.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_로엘 쿠아 수분충전 복숭아맛 에너지음료 분말 스틱.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 게토레이 블루.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 게토레이 블루.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 마스터토닉워터 레귤러.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 마스터토닉워터 레귤러.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 밀키스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 밀키스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 부족할때복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 부족할때복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 칠성사이다 플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 칠성사이다 플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 칠성사이다업소용.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 칠성사이다업소용.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 트레비 라임레몬자몽플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 트레비 라임레몬자몽플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성 핫식스 워터음료 무브업에너지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성 핫식스 워터음료 무브업에너지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_롯데칠성사이다 제로 캔제로콜라캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_롯데칠성사이다 제로 캔제로콜라캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_룩스 탄산레몬 드링크.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_룩스 탄산레몬 드링크.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_룩스 탄산오렌지 드링크.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_룩스 탄산오렌지 드링크.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_링티 제로 복숭아맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_링티 제로 복숭아맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_마시는 포도당 비타아미노.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_마시는 포도당 비타아미노.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_마운틴듀.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_마운틴듀.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_마틸다 스파클링 에이드 레몬 핑크 그레이프프룻.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_마틸다 스파클링 에이드 레몬 핑크 그레이프프룻.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_마틸다 스파클링 핑크 그레이프플룻 에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_마틸다 스파클링 핑크 그레이프플룻 에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_매일유업 테너베이스 농축액 청포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_매일유업 테너베이스 농축액 청포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_맥콜.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_맥콜.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_몰랑팝 유산균.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_몰랑팝 유산균.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_무료배송롯데칠성 칠성사이다 플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_무료배송롯데칠성 칠성사이다 플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미국 한정판 코카콜라 제로 슈가 스타라이트 우주맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미국 한정판 코카콜라 제로 슈가 스타라이트 우주맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미린다 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미린다 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미린다 파인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미린다 파인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미린다 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미린다 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미에로화이바 병증정병.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미에로화이바 병증정병.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미에로화이바 식이섬유.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미에로화이바 식이섬유.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_미에로화이바.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_미에로화이바.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_밀키스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_밀키스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_바이오티 마시는 프리바이오틱스 애플소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_바이오티 마시는 프리바이오틱스 애플소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_박카스 디카페.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_박카스 디카페.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_박카스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_박카스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_박카스병 비타병.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_박카스병 비타병.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_베네데토.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_베네데토.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_보르섹.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_보르섹.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 스파클링 제로 그린애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 스파클링 제로 그린애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 스파클링 제로 패션후르츠.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 스파클링 제로 패션후르츠.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 스파클링 제로 피치.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 스파클링 제로 피치.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 제로 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 제로 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 제로 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 제로 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 제로사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 제로사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_부르르 제로콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_부르르 제로콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_분다버그 레몬라임앤비터스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_분다버그 레몬라임앤비터스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_분다버그 종망고 핑크자몽 레몬라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_분다버그 종망고 핑크자몽 레몬라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_분다버그 진저비어.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_분다버그 진저비어.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_분다버그 핑크 그래이프푸르트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_분다버그 핑크 그래이프푸르트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_분다버그 핑크 그레이프푸르트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_분다버그 핑크 그레이프푸르트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_블루레몬에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_블루레몬에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타 부탁해군 비타민음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타 부탁해군 비타민음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타 비타민.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타 비타민.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타 아연.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타 아연.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타 콜라겐.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타 콜라겐.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타병 박카스병.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타병 박카스병.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_비타파워 비타민음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_비타파워 비타민음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 그린애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 그린애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 레몬향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 레몬향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 베리베리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 베리베리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 복숭아향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 복숭아향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 요거플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 요거플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 청포도 배펫.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 청포도 배펫.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 청포도 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 청포도 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 청포도 히비스커스펫.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 청포도 히비스커스펫.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 청포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 청포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 탄산수음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 탄산수음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 파인애플 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 파인애플 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 플레인레몬자몽라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 플레인레몬자몽라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아 히비스커스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아 히비스커스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빅토리아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빅토리아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_빙그레 쥬시쿨에이드 금귤감귤에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_빙그레 쥬시쿨에이드 금귤감귤에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_뿌요 소다 소다맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_뿌요 소다 소다맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_뿌요 소다 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_뿌요 소다 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_뿌요 소다 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_뿌요 소다 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_사랑주는쇼핑몰 코카콜라음료 토레타 페트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_사랑주는쇼핑몰 코카콜라음료 토레타 페트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_사이다 펩시 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_사이다 펩시 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_사이다 펫박스펫.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_사이다 펫박스펫.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_사이토 라무네 구슬 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_사이토 라무네 구슬 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산가리아 멜론 소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산가리아 멜론 소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산가리아 멜론향 소다음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산가리아 멜론향 소다음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산토리니 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산토리니 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산토리니 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산토리니 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산토리니 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산토리니 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산토리니 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산토리니 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 리모나타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 리모나타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 스파클링 레몬 베버리지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 스파클링 레몬 베버리지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 아란시아타 로싸.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 아란시아타 로싸.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 아란시아타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 아란시아타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 에센자 탠저린 산딸기.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 에센자 탠저린 산딸기.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 페트병.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 페트병.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 펠모 자몽캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 펠모 자몽캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 폼펠모.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 폼펠모.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 혼합 가지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 혼합 가지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노 혼합.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노 혼합.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_산펠레그리노.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_산펠레그리노.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_상쾌한 게토레이 블루볼트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_상쾌한 게토레이 블루볼트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_서울우유 아침에주스 오렌지 아이스박스포장.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_서울우유 아침에주스 오렌지 아이스박스포장.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_소다워터 오리지날.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_소다워터 오리지날.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_소솜상점 웰치스 혼합 포도청포도오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_소솜상점 웰치스 혼합 포도청포도오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_수몰콤팔 과라나 안타르치카.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_수몰콤팔 과라나 안타르치카.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_슈가로로 스파클링 레몬사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_슈가로로 스파클링 레몬사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_슈가로로 스파클링 사과.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_슈가로로 스파클링 사과.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_슈가로로 스파클링 샤인머스캣.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_슈가로로 스파클링 샤인머스캣.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_슈가로로 스파클링 혼합세트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_슈가로로 스파클링 혼합세트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스파클 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스파클 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스프라이트 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스프라이트 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스프라이트 제로 슈가 코카콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스프라이트 제로 슈가 코카콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스프라이트 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스프라이트 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스프라이트 킨사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스프라이트 킨사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스프라이트 패트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스프라이트 패트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_스프라이트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_스프라이트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_슬로우카우 오리지널.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_슬로우카우 오리지널.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_슬로우카우.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_슬로우카우.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_시그너스 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_시그너스 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_시그너스 스파클링 청포도 샤인머스켓.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_시그너스 스파클링 청포도 샤인머스켓.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_시그너스 토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_시그너스 토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_시그너스 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_시그너스 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_시즌 이번엔 라인 푸디트 프로그램.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_시즌 이번엔 라인 푸디트 프로그램.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_싱하 레몬 소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_싱하 레몬 소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_싱하 소다워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_싱하 소다워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_써니텐 오렌지향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_써니텐 오렌지향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_써니텐 파인애플향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_써니텐 파인애플향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_썬키스트 레몬워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_썬키스트 레몬워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_썬키스트 스파클링 자몽소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_썬키스트 스파클링 자몽소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_썬키스트 자몽소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_썬키스트 자몽소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_씨그램 라임 스파클링 워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_씨그램 라임 스파클링 워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_씨그램 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_씨그램 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_씨그램 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_씨그램 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_씨그램 레몬향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_씨그램 레몬향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_씨그램 애플 리프레쉬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_씨그램 애플 리프레쉬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_씨그램 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_씨그램 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아이스웨일 레몬라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아이스웨일 레몬라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아이스웨일 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아이스웨일 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임얼라이브 콤부차.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임얼라이브 콤부차.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임얼라이브콤부차 석류.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임얼라이브콤부차 석류.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임얼라이브콤부차 애플베리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임얼라이브콤부차 애플베리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임얼라이브콤부차 오리지널.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임얼라이브콤부차 오리지널.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임얼라이브콤부차 진저레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임얼라이브콤부차 진저레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임얼라이브콤부차.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임얼라이브콤부차.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_아임톡.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_아임톡.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_암바사 밀크소다 부드러운 코카콜라 암바사 소다맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_암바사 밀크소다 부드러운 코카콜라 암바사 소다맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_에너지음료 컨피던스 소캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_에너지음료 컨피던스 소캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_엔톡 핑크복숭아에이드캔블루레몬에이드캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_엔톡 핑크복숭아에이드캔블루레몬에이드캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_영진 구론산 홍삼액.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_영진 구론산 홍삼액.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오란씨 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오란씨 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오란씨 키위 펫트개.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오란씨 키위 펫트개.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오란씨 파인 키위 오렌지 소캔 혼합 옵션확인 필수.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오란씨 파인 키위 오렌지 소캔 혼합 옵션확인 필수.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오란씨 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오란씨 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오란씨 파인애플향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오란씨 파인애플향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오랑지나.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오랑지나.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오로나민 비타민음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오로나민 비타민음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오션스프레이 스파클링 피치.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오션스프레이 스파클링 피치.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오스터버그 딸기 크러쉬 베이스에이드스무디.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오스터버그 딸기 크러쉬 베이스에이드스무디.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오케이에프 요구르트 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오케이에프 요구르트 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_오케이에프 자두 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_오케이에프 자두 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웅진빅토리아 로즈힙 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웅진빅토리아 로즈힙 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웅진빅토리아 릴렉서.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웅진빅토리아 릴렉서.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웅진빅토리아 에너지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웅진빅토리아 에너지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웅진빅토리아 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웅진빅토리아 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웅진빅토리아 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웅진빅토리아 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_원에이엠 스파클링 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_원에이엠 스파클링 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_원에이엠 스파클링 베리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_원에이엠 스파클링 베리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_원에이엠 스파클링 애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_원에이엠 스파클링 애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_원에이엠 스파클링 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_원에이엠 스파클링 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_원에이엠 스파클링 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_원에이엠 스파클링 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치 소다 그레이프.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치 소다 그레이프.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치 소다 오렌지맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치 소다 오렌지맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치스 그레이프.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치스 그레이프.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치스 스트로베리 소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치스 스트로베리 소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치스 스트로베리 스파클링 소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치스 스트로베리 스파클링 소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치스 포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치스 포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치스 포도맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치스 포도맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_웰치스소다 농심 딸기.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_웰치스소다 농심 딸기.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_이로하스 화이트피치 복숭아 천연수 일본복숭아물 코카콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_이로하스 화이트피치 복숭아 천연수 일본복숭아물 코카콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_이온더핏 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_이온더핏 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_이온더핏.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_이온더핏.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_이프로 복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_이프로 복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_이프로부족할때.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_이프로부족할때.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_인테이크 슈가로로 스파클링 복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_인테이크 슈가로로 스파클링 복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_일동제약 아로골드플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_일동제약 아로골드플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_쟈뎅 까페리얼 꿀복숭아 에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_쟈뎅 까페리얼 꿀복숭아 에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_제로 레몬에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_제로 레몬에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_제로 코카콜라스프라이트 제로 칼로리 제로칼로리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_제로 코카콜라스프라이트 제로 칼로리 제로칼로리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_제로 토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_제로 토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_제주 한라봉 스파클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_제주 한라봉 스파클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_진로 토닉워터 제로 제로토닉.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_진로 토닉워터 제로 제로토닉.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_진로믹서 카린스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_진로믹서 카린스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_진로믹서 토닉워터 깔라만시.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_진로믹서 토닉워터 깔라만시.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_진로믹서 토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_진로믹서 토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_진로토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_진로토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_천연 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_천연 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_천연사이다 업소용캔맥콜캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_천연사이다 업소용캔맥콜캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_천연사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_천연사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_청춘전투 진저에 레몬 한방울.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_청춘전투 진저에 레몬 한방울.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초록우산 수박 에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초록우산 수박 에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산 그린애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산 그린애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 유자.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 유자.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 초정탄산수.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 초정탄산수.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_초정탄산수.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_초정탄산수.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 델몬트 오렌지 오리지널 주스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 델몬트 오렌지 오리지널 주스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 밀키스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 밀키스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 제로 제로칼로리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 제로 제로칼로리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 캔코카콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 캔코카콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 펩시 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 펩시 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 펩시콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 펩시콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다 플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다 플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다캔 환타오렌지캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다캔 환타오렌지캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칠성사이다캔맥콜캔총캔안전박스포장.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칠성사이다캔맥콜캔총캔안전박스포장.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_카나다드라이 클럽소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_카나다드라이 클럽소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칼로리제로 하이트 진로 토닉워터제로 토니워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칼로리제로 하이트 진로 토닉워터제로 토니워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_칼로바이 프로틴 스파클링 무설탕 핑크자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_칼로바이 프로틴 스파클링 무설탕 핑크자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_캐나다 드라이 토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_캐나다 드라이 토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_캐나다드라이 진저에일.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_캐나다드라이 진저에일.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_캐스케이드 스파클링 레모네이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_캐스케이드 스파클링 레모네이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_캐스케이드 스파클링 에이드 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_캐스케이드 스파클링 에이드 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_캐스케이드 스파클링 에이드 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_캐스케이드 스파클링 에이드 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_컨피던스 비타민음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_컨피던스 비타민음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카 코카콜라 캔스프라이트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카 코카콜라 캔스프라이트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 미니캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 미니캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 미닛메이드 스파클링 청포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 미닛메이드 스파클링 청포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 세계 콜라의 위엄 치콜 피콜에 편한.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 세계 콜라의 위엄 치콜 피콜에 편한.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 스타더스트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 스타더스트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 스프라이트 제로 슈가.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 스프라이트 제로 슈가.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 스프라이트 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 스프라이트 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 스프라이트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 스프라이트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 식품 생수음료 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 식품 생수음료 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 씨그램 라벨프리 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 씨그램 라벨프리 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 씨그램 라벨프리 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 씨그램 라벨프리 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 암바사.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 암바사.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 오리지널 대용량.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 오리지널 대용량.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 입박스사은품엠에스디 아쿠아 모이스쳐 마스크팩.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 입박스사은품엠에스디 아쿠아 모이스쳐 마스크팩.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 제로 제로콜라 청량음료 미니펫 미니탄산 편의점.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 제로 제로콜라 청량음료 미니펫 미니탄산 편의점.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 제로 추가증정 다이어트 콜라 칼로리.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 제로 추가증정 다이어트 콜라 칼로리.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 제로 페트 제로슈거 코크제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 제로 페트 제로슈거 코크제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 제로스프라이트 청량음료 사이다 미니 소캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 제로스프라이트 청량음료 사이다 미니 소캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 칠성사이다 안심박스포장.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 칠성사이다 안심박스포장.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 칠성사이다 웰치스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 칠성사이다 웰치스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 칠성사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 칠성사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 캔입.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 캔입.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 캔칠성사이다캔환타오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 캔칠성사이다캔환타오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 캔콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 캔콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 캔환타 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 캔환타 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 캔환타오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 캔환타오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 코카 씨그램 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 코카 씨그램 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 코카콜라 스프라이트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 코카콜라 스프라이트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 코카콜라업소용.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 코카콜라업소용.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 코카콜라환타오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 코카콜라환타오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 코크제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 코크제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 콜라 박스포장.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 콜라 박스포장.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 콜라 환타 스프라이트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 콜라 환타 스프라이트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 콜라음료.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 콜라음료.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 킨사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 킨사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 토레타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 토레타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 특수채널용.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 특수채널용.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 파워에이드 마운틴 블라스트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 파워에이드 마운틴 블라스트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 파워에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 파워에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 페트병 미니 페트병.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 페트병 미니 페트병.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 환타 믹스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 환타 믹스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 환타 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 환타 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 환타 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 환타 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라 환타오렌지 각펫 탄산음료묶음.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라 환타오렌지 각펫 탄산음료묶음.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라음료 코카콜라 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라음료 코카콜라 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라음료 코카콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라음료 코카콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라음료 환타 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라음료 환타 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라음료주식회사 스프라이트 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라음료주식회사 스프라이트 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라코크제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라코크제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라환타오렌지 청량음료 미니펫 미니탄산 편의점.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라환타오렌지 청량음료 미니펫 미니탄산 편의점.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코카콜라환타오렌지밀키스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코카콜라환타오렌지밀키스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코크 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코크 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코크제로 코카콜라 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코크제로 코카콜라 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_코크제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_코크제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_콜라 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_콜라 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_콜라 칠성사이다 환타 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_콜라 칠성사이다 환타 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_콜라 카나다드라이 토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_콜라 카나다드라이 토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_콜라 파워에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_콜라 파워에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_크레용 신짱 라무네 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_크레용 신짱 라무네 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_크레용신짱 라무네.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_크레용신짱 라무네.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_크레용신짱라무네 멜론.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_크레용신짱라무네 멜론.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_크레용신짱라무네 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_크레용신짱라무네 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_키위에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_키위에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_킨사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_킨사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 그린애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 그린애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 워터 청포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 워터 청포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 스파클링 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 스파클링 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 시그니처 스파클링 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 시그니처 스파클링 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 제로 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 제로 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 제로 소다 애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 제로 소다 애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 제주스파클링 샤인머스캣향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 제주스파클링 샤인머스캣향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 제주스파클링 체리향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 제주스파클링 체리향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 제주스파클링 한라봉.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 제주스파클링 한라봉.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탐사 제주제로소다 한라봉.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탐사 제주제로소다 한라봉.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탑씨 오렌지향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탑씨 오렌지향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탑씨 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탑씨 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_탑씨 포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_탑씨 포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토레타 게토레이 파워에이드 포카리스웨트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토레타 게토레이 파워에이드 포카리스웨트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토레타 아쿠아리우스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토레타 아쿠아리우스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토레타.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토레타.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토민 베리클링 마시는 블랙베리딸기.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토민 베리클링 마시는 블랙베리딸기.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토민 샤인클링 피치클링 라봉클링 베리클링 혼합.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토민 샤인클링 피치클링 라봉클링 베리클링 혼합.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토민 샤인클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토민 샤인클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_토민 피치클링.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_토민 피치클링.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 레몬 라임 자몽 플레인 청귤.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 레몬 라임 자몽 플레인 청귤.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 레몬맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 레몬맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 레몬향 코스트코.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 레몬향 코스트코.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 롯데칠성 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 롯데칠성 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 애플 트레비 플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 애플 트레비 플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 애플 플러스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 애플 플러스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 청귤.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 청귤.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 플레인 페트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 플레인 페트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트레비.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트레비.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트로피카나 스파클링 망고.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트로피카나 스파클링 망고.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트로피카나 스파클링 복숭아.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트로피카나 스파클링 복숭아.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트로피카나 스파클링 사과.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트로피카나 스파클링 사과.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트로피카나 스파클링 애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트로피카나 스파클링 애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_트로피카나 스파클링 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_트로피카나 스파클링 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드 마운틴 블라스트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드 마운틴 블라스트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드 마운틴블라스트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드 마운틴블라스트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드 메가볼츠 스포츠.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드 메가볼츠 스포츠.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드 캔게토레이.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드 캔게토레이.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드 퍼플스톰.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드 퍼플스톰.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워에이드캔토레타캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워에이드캔토레타캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워오투 복숭아 자몽향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워오투 복숭아 자몽향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워오투 아이스베리향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워오투 아이스베리향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_파워오투 오렌지 레몬향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_파워오투 오렌지 레몬향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_팔도 뿌요소다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_팔도 뿌요소다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_팔일오 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_팔일오 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_팔일오 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_팔일오 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 딸기.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 딸기.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 라임 패트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 라임 패트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 라임향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 라임향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 레몬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 레몬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 레몬향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 레몬향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 플레인.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 플레인.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 피치향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 피치향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_페리에 핑크자몽.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_페리에 핑크자몽.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 롯데펩시캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 롯데펩시캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 제로 라임향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 제로 라임향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 제로 콜라 라임향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 제로 콜라 라임향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 제로 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 제로 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 제로슈거 라임향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 제로슈거 라임향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 콜라 제로 라임향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 콜라 제로 라임향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 콜라 제로슈거.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 콜라 제로슈거.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시 콜라캔.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시 콜라캔.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시슈거 제로 라임향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시슈거 제로 라임향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시제로콜라 라임.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시제로콜라 라임.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시콜라 제로슈거.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시콜라 제로슈거.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시콜라 칠성사이다 밀키스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시콜라 칠성사이다 밀키스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시콜라 펩시 제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시콜라 펩시 제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시콜라.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시콜라.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시콜라개.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시콜라개.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_펩시콜라업소용 캔칠성사이다업소용.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_펩시콜라업소용 캔칠성사이다업소용.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_포카리스웨트 분말.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_포카리스웨트 분말.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_포카리스웨트 스퀴즈보틀 분말.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_포카리스웨트 스퀴즈보틀 분말.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_포카리스웨트 이온워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_포카리스웨트 이온워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_포카리스웨트.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_포카리스웨트.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_피지컬랩 빡텐션 고카페인 타우린 비타민 김계란 에너지드링크.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_피지컬랩 빡텐션 고카페인 타우린 비타민 김계란 에너지드링크.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_피지컬랩 빡텐션캔 김계란 에너지드링크 타우린 고카페인 비타민 라임맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_피지컬랩 빡텐션캔 김계란 에너지드링크 타우린 고카페인 비타민 라임맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_핑크복숭아에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_핑크복숭아에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_하이드로 프리미엄 토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_하이드로 프리미엄 토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_하이트진로음료 대용량토닉워터.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_하이트진로음료 대용량토닉워터.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_한라봉 에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_한라봉 에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_핫식스 더킹 러쉬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_핫식스 더킹 러쉬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_핫식스 더킹 파워.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_핫식스 더킹 파워.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_핫식스 더킹포스.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_핫식스 더킹포스.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_핫식스 슬릭 더킹 러쉬.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_핫식스 슬릭 더킹 러쉬.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_해태 갈배 사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_해태 갈배 사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_해태 썬키스트 레몬에이드.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_해태 썬키스트 레몬에이드.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_행사해태 갈배사이다.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_행사해태 갈배사이다.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_헬스헬퍼 팡클 제로 칼로리 사이다 오렌지맛.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_헬스헬퍼 팡클 제로 칼로리 사이다 오렌지맛.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_현대약품 미에로화이바.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_현대약품 미에로화이바.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_현대약품 비타업.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_현대약품 비타업.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_홈스웰 코크제로.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_홈스웰 코크제로.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_화이브미니.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_화이브미니.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_환타 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_환타 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_환타 오렌지향 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_환타 오렌지향 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_환타 오렌지향.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_환타 오렌지향.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_환타 파인애플 환타 오렌지.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_환타 파인애플 환타 오렌지.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_환타 파인애플.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_환타 파인애플.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/review_환타 포도.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/review_환타 포도.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review_datas/reviews_갈바니나 레몬 소다수.csv" beforeDir="false" afterPath="$PROJECT_DIR$/review_data/reviews_갈바니나 레몬 소다수.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +654,7 @@
       <workItem from="1664695511914" duration="5079000" />
       <workItem from="1664700776474" duration="13000" />
       <workItem from="1664700885978" duration="19216000" />
-      <workItem from="1664792748236" duration="303000" />
+      <workItem from="1664792748236" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="submit">
       <created>1664792911032</created>
@@ -173,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664792911032</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="submit">
+      <created>1664793155635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664793155635</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,12 +1,11 @@
 import pandas as pd
 from konlpy.tag import Okt
-import re
+
 
 df = pd.read_csv('./crawling_data/cleaned_data.csv')
 df.dropna(inplace=True)
 print(df.head())
 df.info()
-
 okt = Okt()
 count = 0
 cleaned_sentences = []

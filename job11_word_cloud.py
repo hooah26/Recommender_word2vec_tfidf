@@ -7,7 +7,7 @@ import matplotlib as mpl
 import numpy as np
 from PIL import Image
 
-fontpath = './malgun.ttf'
+fontpath = './malgun_.ttf'
 font_name = font_manager.FontProperties(
     fname=fontpath).get_name()
 mpl.rcParams['axes.unicode_minus']=False
